@@ -1,21 +1,41 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kasperi Helin</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
+<header>
+    <nav class="responsive-nav">
+      <button class="menu-toggle">☰ Valikko</button>
+      <ul class="nav-list">
+       <li><a href="#about">Tietoja minusta</a></li>
+        <li><a href="#harrastukset">Harrastukset</a></li>
+       <li><a href="#top2">TOP 2</a></li>
+      </ul>
+    </nav>
+      
+  </header>
+    <div class="animation-box">Tervetuloa</div> 
     <h1>Kassun Sivusto</h1>
-    <p>Olen ensimmäisen vuoden opiskelija laureassa</p>
-<img src="./Images/nettisivunkuva.jpg" alt="kasperi Helin" style="width: 300px;height: 400px;">
+<img src="./Images/nettisivunkuva.jpg" alt="kasperi Helin" class="filter-image" style="width: 300px;height: 400px;">
 
+<h2><button class="transition-button">Hover me</button></h2>
+<blockquote class="quote">
+        "You miss 100% of the shots you dont make". -Wayne Gretzky
+      </blockquote>
+<section id ="harrastukset">
 <h2>Harrastukset</h2>
-<ol>
+<ul class="pseudo-list">
     <li>Penkkiurheilu</li>
     <li>Tietokoneella ja pleikalla pelaaminen</li>
     <li>Kuntosali</li>
-</ol>
-<h3>Lempijalkapallojoukkue</h3>
-<a href="https://www.liverpoolfc.com/">Klikkaa tästä</a>
+    </ul>
+</section>
+<h3>Lempi jalkapallojoukkue</h3>
+<a href="https://www.liverpoolfc.com/">Klikkaa tästä</a> 
 <h4>Koulukurssit</h4>
 <table>
     <tr>
@@ -39,6 +59,24 @@
         <td>4/5</td>
     </tr>
 </table>
+<h2>Top 2 Lempi</h2>
+<section id="top2"> 
+<div class="flex-container">
+    <div class="box">Futisjoukkueet </div>
+    <div class="box">Sarjat</div>
+    <div class="box">Elokuvat</div>
+  </div>
+  <div class="grid-container">
+    <div class="grid-item">Liverpool</div>
+    <div class="grid-item">Breaking Bad</div>
+    <div class="grid-item">Star Wars</div>
+    <div class="grid-item">Stuttgard</div>
+    <div class="grid-item">Stranger Things</div>
+    <div class="grid-item">Spiderman</div>
+  </div>
+</section>
+<div class="responsive-box">Muuta ikkunan kokoa muuttuakseen</div>
+
 <h5>Yhteydenottolomake</h5>
 <form>
     <label for="name">Name:</label>
@@ -46,6 +84,29 @@
     <label for="email">Email:</label>
     <input type="email" id="email" name="email"><br><br>
     <input type="submit" value="Submit">
-    </form>
+  </form>
+  
+  
+<main>
+    <section id="about">
+      <h2>Tietoa musta</h2>
+      <p>Olen ensimmäisen vuoden opiskelija Laureassa. Minulla on 3kk koiranpentu kuva alhaalla</p>
+      <div class="responsive-container">
+        <div class="column">Kuva 1</div>
+        <img src="./Images/IMG_3384.jpg" alt="responsive image" class="responsive-image">
+        <div class="column">Kuva 2</div>
+        <img src="./Images/koira.jpg" alt="responsive image" class="responsive-image">
+        
+      </div>
+
+      
+
+    </section>
+  </main>
+  
+  <footer>
+    <p>Copyright 2025</p>
+  </footer>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,213 @@
+p {
+    color: rgb(255, 255, 255);
+}
+body {
+    background-color: rgb(255, 128, 0);
+    text-align: center;
+    color: White;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+h1 {
+    font-size: 2em;
+    text-align: center;
+    color : #000000;
+}
+div {
+    padding: 20px;
+    margin: 10px;
+}
+Table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+    color: #000000;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+label {
+    font-weight: bold;
+}
+input[type="text"], input[type="email"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+imput[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+imput[type="submit"]:hover {
+    background-color: #45a049;
+}
+img {
+    border-radius: 8px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
+.transition-button {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    
+}
+.transition-button:hover {
+    background-color: rgb(0, 0, 0);
+}
+.animation-box {
+    width: 500px;
+    height: 25px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    animation: move 15s infinite alternate;
+    
+}
+@keyframes move {
+    from {
+        left: 0;
+    }
+    to {
+        left: 1360px;
+    }
+}
+div.animation-box {
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.pseudo-list li:nth-child(odd) {
+        background-color: lightgray;
+      }
+      
+      .pseudo-list li:nth-child(even) {
+        background-color: white;
+      }
+#harrastukset {
+    color :#000000;
+    text-align: center;
+
+}
+ul.pseudo-list {
+    list-style-type: none;
+    padding: 0;
+}
+.filter-image {
+    filter: blur(8px);
+    transition: filter 0.5s ease;
+
+}
+.filter-image:hover {
+    filter: blur(0px);
+}
+.quote {
+        position: relative;
+        padding-left: 20px;
+        font-style: italic;
+      }
+      
+      .quote::before {
+        content: '“';
+        font-size: 40px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: lightgray;
+      }
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .box {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .grid-item {
+    background-color: rgb(255, 0, 0);
+    padding: 20px;
+    text-align: center;
+  }
+  .responsive-box {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  @media (max-width: 1000px) {
+    .responsive-box {
+      background-color: orange;
+    }
+  }
+  
+  @media (min-width: 1001px) {
+    .responsive-box {
+      background-color: black;
+    }
+  }
+  ul { list-style-type: none;
+  padding: 0;
+    }
+
+.responsive-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .column {
+      flex: 1;
+      padding: 10px;
+    }
+    
+    @media (max-width: 600px) {
+      .column {
+        flex: 100%;
+      }
+    }
+    .responsive-image {
+  max-width: 30%;
+  height: auto;
+}
+.responsive-nav .nav-list {
+      display: flex;
+      list-style: none;
+    }
+    .responsive-nav .menu-toggle {
+      display: none;
+
+    }
+    
+    @media (max-width: 600px) {
+      .responsive-nav .nav-list {
+        display: none;
+      }
+    
+      .responsive-nav .menu-toggle {
+        display: block;
+      }
+    }
