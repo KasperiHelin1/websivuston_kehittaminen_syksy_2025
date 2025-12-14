@@ -1,0 +1,99 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #0d1b2a;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #1b263b;
+}
+
+th {
+    background-color: #1b263b;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #233447;
+}
+
+.rating {
+    background-color: #f0a500;
+    color: black;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+h1 {
+    text-align: center;
+    font-size: 36px;
+    padding-top: 40px;
+}
+h2 {
+    padding-top: 40px;
+
+}
+body {
+    background-color: #00003a;
+    color: #00003a;
+    margin: 0;
+    padding: 20px;
+}
+.navbar {
+  width: 100%;
+}
+.nav-link.active {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #0d6efd;
+}
+body {
+  margin: 0;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: navy;
+}
+img {
+    border-radius: 8px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
+footer {
+  position: default;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  padding: 15px 0;
+  border-top: 1px solid #ccc;
+  z-index: 1000;
+}
+body {
+  padding-bottom: 0px;
+}
+.auto-fill {
+  animation: fillPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes fillPulse {
+  0% {
+    background-color: transparent;
+    color: #ffc107;
+  }
+  50% {
+    background-color: #ffc107;
+    color: #000;
+  }
+  100% {
+    background-color: transparent;
+    color: #ffc107;
+  }
+}
